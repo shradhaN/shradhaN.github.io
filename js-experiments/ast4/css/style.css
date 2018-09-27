@@ -1,0 +1,32 @@
+
+.container{
+	align-content: center;
+}
+
+.viewport{
+	width:1140px;
+	/*height:570px;*/
+	height:550px;
+	background:grey;
+	overflow:hidden;
+	position:relative;
+}
+
+.clearfix::before, .clearfix::after{
+	display:table;
+	clear:both;
+	content:"";
+}
+
+.image-list {
+	width:5700px;
+	/*height:570px;*/
+	background: grey;
+	
+
+}
+
+.image-list li{
+	list-style:none;
+	float:left;
+}
