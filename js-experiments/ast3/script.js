@@ -106,51 +106,6 @@ console.log(normal);
 
 
 
-/*childrenCount = peopleItem.children.length;
-		var childIds=[];
-		if (childrenCount){
-			for (j=0;j<childrenCount;j++){
-				childrenItem=peopleItem.children[j];
-				childIds.push(childrenItem.id);
-
-				console.log(childrenItem.children);
-				if (childrenItem.children){
-					var grandchildIds=[];
-					for (k=0;k<childrenItem.children.length;k++){
-						grandChild=childrenItem.children[k];
-						grandchildIds.push(grandChild.id)
-					}
-					normalizedPeople.push({
-						2:{
-							"id":childrenItem.id,
-							"name":childrenItem.name,
-							"children":grandchildIds,
-						}
-					});
-				}
-				else{
-					normalizedPeople.push({
-						3:{
-							"id":childrenItem.id,
-							"name":childrenItem.name,
-							"children":[],
-						}
-					});
-					console.log("childchaina")
-				}
-
-			}
-			console.log(childIds);
-			normalizedPeople.push({
-					1:{
-						"id":peopleItem.id,
-						"name":peopleItem.name,
-						"children":childIds,
-					}
-				});
-			console.log(normalizedPeople);
-		}*/
-
 
 
 
