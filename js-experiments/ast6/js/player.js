@@ -28,10 +28,9 @@ function Player(x, y, w, h) {
 				}
 
 				else {
-					if(!this.scored) {
-						score ++;
-						this.scored =true;
-					}
+					score ++;
+					this.scored =true;
+					
 					
 
 				}
