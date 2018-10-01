@@ -8,6 +8,7 @@ function Background(x, y, w, h, speed) {
 	//draw function
 	this.draw = function() {
 		ctx.drawImage(imageBG,this.x,this.y);
+		/*ctx2.drawImage(imageBG,this.x,this.y);*/
 	}
 
 	//update functon
