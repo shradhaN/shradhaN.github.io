@@ -5,22 +5,27 @@ class Bird {
 		this.y = y;
 		this.w = w;
 		this.h = h;
-
 		this.gravity = 0;
 		this.velocity = 0;
 		this.scored = false;
+		this.rotation = 0.5;
+		/*this.ctx = ctx;*/
 
 	}
 
-	draw() {
-		ctx.drawImage(birdImage, this.x, this.y);
+	draw(ctx) {
+	
+		if(this.gravity > 1){
+			ctx.drawImage(birdDown, this.x, this.y);
+		}
+		else{
+			ctx.drawImage(birdImage, this.x, this.y);
+		}
+		
+		
 	}
 
-	update() {
-		this.gravity += 0.1;
-		this.y += this.gravity + this.velocity;
-
-		//check for collision
+	handleCollision(pipeArray) {
 		for (let i = 0; i < pipeArray.length; i ++) {
 			let p = pipeArray[i]
 			if (this.x + this.w >= p.x && this.x <= p.x + pipeUp.width &&
@@ -40,6 +45,14 @@ class Bird {
 			}
 
 		}
+
+	}
+
+	update(pipeArray) {
+		this.gravity += 0.1;
+		this.y += this.gravity + this.velocity;	
+		//check for collision
+		this.handleCollision(pipeArray);		
 
 	}
 

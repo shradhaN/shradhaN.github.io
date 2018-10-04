@@ -5,9 +5,10 @@ class Background {
 		this.y = y;
 		this.w = w;
 		this.h = h;
+		/*this.ctx = ctx;*/
 	}
 
-	draw() {
+	draw(ctx) {
 		ctx.drawImage(backgroundImage, this.x, this.y);
 	}
 }
